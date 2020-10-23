@@ -1,0 +1,40 @@
+<div class="container">
+
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm" >
+
+    <div class="row">
+      <div class="col-6">
+
+        <div class="form-group">
+          <label for="id_name">Nome</label>
+          <input class="form-control form-control-lg" type="text" name="name" id="id_name" ngModel required>
+        </div>
+
+        <div class="form-group">
+          <label for="id_price">Preço</label>
+          <input class="form-control form-control-lg" type="number" name="price" id="id_price" ngModel required>
+        </div>
+
+      </div>
+
+      <div class="col-6">
+
+        <div class="form-group">
+          <label for="id_description">Descrição</label>
+          <input class="form-control form-control-lg" type="text" name="description" id="id_description" ngModel required>
+        </div>
+
+        <div class="form-group">
+          <label for="id_rating">Avaliação</label>
+          <input class="form-control form-control-lg" type="number" name="rating" id="id_rating" ngModel required>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button class="btn btn-primary" type="submit" [disabled]="f.form.invalid">Enviar</button>
+
+  </form>
+
+</div>

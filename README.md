@@ -1,2 +1,2 @@
 # papw
-Repositório destinado a disciplina de programação avançada para web
+Repositório destinado a disciplina de programação avançada para web AVC
